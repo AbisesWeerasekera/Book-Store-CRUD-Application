@@ -1,0 +1,14 @@
+<!-- There is no need to inout filed for Id -->
+<form [formGroup]="bookForm" (ngSubmit)="saveBook()">
+  <div class="form-group">
+    <label for="title">Title</label>
+    <input type="text" class="form-control" id="title" name="title" formControlName="title" />
+  </div>
+  <div class="form-group">
+    <label for="description">Title</label>
+    <input type="text" class="form-control" id="description" name="description" formControlName="description" />
+  </div>
+  <div class="form-group">
+    <input type="submit" value="save" class="btn btn-primary" id="description" />
+  </div>
+</form>
